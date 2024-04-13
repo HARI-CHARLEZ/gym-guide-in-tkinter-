@@ -112,13 +112,13 @@ def reset_entry(event, entry, default_text):
 label=tk.Label(root,text='GYM GUIDE',fg='green',bg='black',font=('microsoft YaHei UI Light',18,'bold')).place(x=400,y=100)
 entry=tk.Entry(root, width=30, fg="black", border=0, bg='white', font=('microsoft YaHei UI Light', 11))
 entry.place(x=350,y=180)
-entry.insert(0,'enter your age')
+entry.insert(0,'ENTER YOUR AGE')
 entry.bind('<FocusIn>', lambda event: clear_entry(event, entry))
 entry.bind('<FocusOut>', lambda event: reset_entry(event, entry, 'ENTER YOUR AGE'))
 
 entry1=tk.Entry(root, width=30, fg="black", border=0,bg='white', font=('microsoft YaHei UI Light', 11))
 entry1.place(x=350,y=250)
-entry1.insert(0,'enter your weight')
+entry1.insert(0,'ENTER YOUR WEIGHT')
 entry1.bind('<FocusIn>', lambda event: clear_entry(event, entry1))
 entry1.bind('<FocusOut>', lambda event: reset_entry(event, entry1, 'ENTER YOUR WEIGHT'))
 
